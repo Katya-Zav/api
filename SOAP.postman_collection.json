@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "86fbbe44-5f39-4215-bd5c-c0fe6af9f54c",
+		"name": "SOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38535142",
+		"_collection_link": "https://www.postman.com/security-administrator-55785195/workspace/my-workspace/collection/38535142-86fbbe44-5f39-4215-bd5c-c0fe6af9f54c?action=share&source=collection_link&creator=38535142"
+	},
+	"item": [
+		{
+			"name": "ListOfContinentsByName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:ListOfContinentsByName></web:ListOfContinentsByName>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}",
+					"host": [
+						"{{URL SOAP}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfCurrenciesByName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:ListOfCurrenciesByName></web:ListOfCurrenciesByName>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}}",
+					"host": [
+						"{{URL SOAP}}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfCountryNamesByName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:ListOfCountryNamesByName></web:ListOfCountryNamesByName>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}}",
+					"host": [
+						"{{URL SOAP}}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CountryName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:CountryName>\n            <web:sCountryISOCode>BY</web:sCountryISOCode>\n        </web:CountryName>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}",
+					"host": [
+						"{{URL SOAP}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CountryISOCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:CountryISOCode>\n            <web:sCountryName>Belarus</web:sCountryName>\n        </web:CountryISOCode>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}}",
+					"host": [
+						"{{URL SOAP}}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FullCountryInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:FullCountryInfo>\n            <web:sCountryISOCode>BY</web:sCountryISOCode>\n        </web:FullCountryInfo>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}",
+					"host": [
+						"{{URL SOAP}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LanguageName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <x:Header/>\n    <x:Body>\n        <web:LanguageName>\n            <web:sISOCode>BLR</web:sISOCode>\n        </web:LanguageName>\n    </x:Body>\n</x:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL SOAP}}",
+					"host": [
+						"{{URL SOAP}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
