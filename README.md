@@ -20,5 +20,5 @@
 
 Создана коллекция в Postman для тестирования SOAP сервиса, который позволяет получать информацию о целевой стране. Коллекция разработана на основе [WSDL-документа](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL).
 
-[Ссылка на коллекцию в Postman](https://github.com/Katya-Zav/api/blob/main/DemoShopping%20my.postman_collection.json)
+[Ссылка на коллекцию в Postman](https://github.com/Katya-Zav/api/blob/main/SOAP.postman_collection.json)
 
